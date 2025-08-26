@@ -5,18 +5,18 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Desenvolvimento Full Stack",
-      description: "Java, Ember.js, WildFly e MySQL para sistemas robustos e escaláveis"
+      title: "Full Stack Development",
+      description: "Java, Ember.js, WildFly and MySQL for robust and scalable systems"
     },
     {
       icon: Activity,
-      title: "Sistemas de Saúde",
-      description: "Experiência em LIS (Laboratory Information Systems) e mensagens HL7"
+      title: "Healthcare Systems",
+      description: "LIS (Laboratory Information Systems) development and HL7 messages"
     },
     {
       icon: Database,
-      title: "Bioinformática",
-      description: "Desenvolvimento de ferramentas Docker e soluções para análise biológica"
+      title: "Bioinformatics",
+      description: "Development of Docker-based tools for biological data analysis"
     }
   ];
 
@@ -24,10 +24,9 @@ const AboutSection = () => {
     <section className="py-20 px-4" id="about">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">Sobre Mim</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Sou um Engenheiro Biomédico e Full Stack Developer apaixonado por aplicar tecnologia 
-            na área da saúde para criar soluções que melhoram vidas.
+            I am a Biomedical Engineer and Full Stack Developer passionate about leveraging technology in healthcare to create innovative solutions that improve lives.
           </p>
         </div>
 
