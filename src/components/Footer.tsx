@@ -76,7 +76,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Diogo Adão. Todos os direitos reservados.
+            © {currentYear} Diogo Adão. All rights reserved.
           </p>
         </div>
       </div>
