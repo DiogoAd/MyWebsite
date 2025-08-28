@@ -23,7 +23,7 @@ const ContactSection = () => {
       icon: MapPin,
       label: "Localização",
       value: "Porto, Portugal"
-    }
+    },
   ];
 
   return (
@@ -64,7 +64,7 @@ const ContactSection = () => {
             <Card className="p-6 bg-primary/5 border-primary/20">
               <h4 className="font-semibold mb-3">Specialization</h4>
               <p className="text-muted-foreground mb-4">
-               Specialized in developing digital tools and systems to improve healthcare and biomedical workflows.
+                Specialized in developing digital tools and systems to improve healthcare and biomedical workflows.
               </p>
               <div className="flex items-center">
                 <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
@@ -73,42 +73,56 @@ const ContactSection = () => {
             </Card>
           </div>
 
-          {/* Contact Form */}
           <Card className="p-8">
             <h3 className="text-2xl font-bold mb-6">Send Message</h3>
-            <form className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div style={{ display: 'none' }}>
+                <label>
+                  Don’t fill this out if you're human: <input name="bot-field" />
+                </label>
+              </div>
+
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your name" className="transition-all focus:shadow-soft" />
+                  <Input id="name" name="name" placeholder="Your name" className="transition-all focus:shadow-soft" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" className="transition-all focus:shadow-soft" />
+                  <Input id="email" type="email" name="email" placeholder="your@email.com" className="transition-all focus:shadow-soft" />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="subject">Subject</Label>
-                <Input id="subject" placeholder="Subject" className="transition-all focus:shadow-soft" />
+                <Input id="subject" name="subject" placeholder="Subject" className="transition-all focus:shadow-soft" />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Describe your project or question" 
+                <Textarea
+                  id="message"
+                  name="message"
+                  placeholder="Describe your project or question"
                   rows={6}
                   className="transition-all focus:shadow-soft resize-none"
                 />
               </div>
-              
-              <Button size="lg" className="w-full hero-gradient text-primary-foreground hover:shadow-medium transition-all">
+
+              <Button type="submit" size="lg" className="w-full hero-gradient text-primary-foreground hover:shadow-medium transition-all">
                 <Send className="mr-2 h-5 w-5" />
                 Send Message
               </Button>
             </form>
           </Card>
+
         </div>
       </div>
     </section>
