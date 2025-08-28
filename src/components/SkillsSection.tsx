@@ -35,6 +35,17 @@ const SkillsSection = () => {
         { name: "Linux", level: 70 },
         { name: "Shell Scripting", level: 70 }
       ]
+    },
+    {
+      title: "Others",
+      skills: [
+          { name: "Electronics Design", level: 95 },
+          { name: "Microcontrollers (Arduino/Raspberry Pi)", level: 95 },
+          { name: "Signal Acquisition & Processing", level: 95 },
+          { name: "Embedded Systems", level: 85 },
+          { name: "Biomechanics", level: 85 },
+          { name: "SolidWorks 3D Modeling", level: 70 }
+      ]
     }
   ];
 
@@ -49,7 +60,7 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-4 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <Card key={index} className="p-6 hover:shadow-medium transition-shadow">
               <h3 className="text-xl font-semibold mb-6 text-center">{category.title}</h3>
