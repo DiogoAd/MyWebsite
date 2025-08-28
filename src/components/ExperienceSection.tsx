@@ -6,34 +6,56 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: "Full Stack Developer",
-      company: "Laboratory Information System Project",
-      location: "Portugal",
-      period: "Presente",
-      description: "Desenvolvimento de um Laboratory Information System (LIS) que processa mensagens HL7, contribuindo para novas funcionalidades e resolução de bugs. Trabalho com Java, Ember.js, WildFly e MySQL.",
-      skills: ["Java", "Ember.js", "WildFly", "MySQL", "HL7", "LIS"]
+      company: "Pet Universal",
+      location: "Porto, Portugal",
+      period: "Dec 2024 - Now",
+      description: "Development of a Laboratory Information System (LIS) handling HL7 messages, contributing with new features, bug fixes, and performance improvements using Java, Ember.js, WildFly, and MySQL.",
+      skills: ["Java", "JavaScript", "Ember.js","MySQL", "HL7", "Wildfly", "GIT"]
     },
     {
-      title: "Software Developer",
+      title: "Thesis Internship",
       company: "Phenotypic Evolution Group (pegi3s)",
-      location: "Portugal",
-      period: "Anterior",
-      description: "Manutenção do projeto Bioinformatics Docker Images e desenvolvimento de ferramentas user-friendly como DocNRun e Docker Manager para simplificar o uso de Docker na bioinformática.",
-      skills: ["Docker", "Bioinformatics", "Linux", "Shell Scripting", "Git"]
+      location: "Porto, Portugal",
+      period: "Sep 2023 - Jul 2024",
+      description: "Maintained the Bioinformatics Docker Images project and developed user-friendly tools (DocNRun, Docker Manager) to simplify Docker usage in bioinformatics.",
+      skills: ["Python", "GUI", "Docker", "Bioinformatics", "Linux", "Shell Scripting"]
+    },
+    {
+      title: "Bachelor's Internship",
+      company: "Phenotypic Evolution Group (pegi3s)",
+      location: "Porto, Portugal",
+      period: "Mar 2022 - Jul 2022",
+      description: "Supported the Quality Department (GQ) through projects in Health Metrology, equipment calibration, Eye Bank requirements, and document management systems.",
+      skills: ["Hospital Information Systems", "Medical Equipment", "GHAF", "Research"]
+    },
+    {
+      title: "Student Association",
+      company: "Phenotypic Evolution Group (pegi3s)",
+      location: "Porto, Portugal",
+      period: "Mar 2020 - Dec 2024",
+      description: "Board member of the Sports Department, managing college teams, coordinating national competitions, and organizing major student events.",
+      skills: ["Problem Solving", "Communication", "Leadership", "Teamwork"]
     }
   ];
 
   const education = [
     {
-      degree: "Mestrado em Engenharia Biomédica",
-      school: "Universidade",
-      period: "Anos de Estudo",
-      description: "Especialização em sistemas de informação médica, processamento de sinais biomédicos e tecnologias aplicadas à saúde"
+      degree: "Master's in Biomedical Engineering",
+      school: "ISEP - Instituto Superior de Engenharia do Porto",
+      period: "Sep 2022 - Jul 2024",
+      description: "An advanced program integrating engineering, science, and technology, equipping professionals to work at the interface between engineering and health sciences."
     },
     {
-      degree: "Licenciatura em Engenharia Biomédica",
-      school: "Universidade",
-      period: "Anos de Estudo", 
-      description: "Formação sólida em engenharia aplicada à medicina, programação e sistemas biomédicos"
+      degree: "Erasmus+ BIP - Molecular Biotechnology",
+      school: "HELHa — Haute École Louvain en Hainaut",
+      period: "Mar 2021 - Mar 2021", 
+      description: "A solid program combining engineering principles with health sciences, preparing students to address clinical challenges and develop biomedical technologies."
+    },
+    {
+      degree: "Baschelor's in Biomedical Engineering",
+      school: "ISEP - Instituto Superior de Engenharia do Porto",
+      period: "Sep 2019 - Sep 2022", 
+      description: "A solid program combining engineering principles with health sciences, preparing students to address clinical challenges and develop biomedical technologies."
     }
   ];
 
@@ -41,9 +63,9 @@ const ExperienceSection = () => {
     <section className="py-20 px-4 bg-muted/30" id="experience">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">Experiência</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">Experience</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            O meu percurso profissional e académico
+            My professional and academic background
           </p>
         </div>
 
@@ -52,9 +74,9 @@ const ExperienceSection = () => {
           <div>
             <h3 className="text-2xl font-bold mb-8 flex items-center">
               <div className="w-8 h-8 bg-hero-gradient rounded-full mr-3"></div>
-              Experiência Profissional
+              Professional Experience
             </h3>
-            
+
             <div className="space-y-6">
               {experiences.map((exp, index) => (
                 <Card key={index} className="p-6 hover:shadow-medium transition-shadow">
@@ -63,7 +85,7 @@ const ExperienceSection = () => {
                       <h4 className="text-xl font-semibold text-primary">{exp.title}</h4>
                       <p className="text-lg font-medium">{exp.company}</p>
                     </div>
-                    
+
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                       <div className="flex items-center">
                         <Calendar className="h-4 w-4 mr-1" />
@@ -74,11 +96,10 @@ const ExperienceSection = () => {
                         {exp.location}
                       </div>
                     </div>
-                    
+
                     <p className="text-muted-foreground leading-relaxed">
                       {exp.description}
                     </p>
-                    
                     <div className="flex flex-wrap gap-2">
                       {exp.skills.map((skill, skillIndex) => (
                         <Badge key={skillIndex} variant="secondary" className="text-xs">
@@ -96,7 +117,7 @@ const ExperienceSection = () => {
           <div>
             <h3 className="text-2xl font-bold mb-8 flex items-center">
               <div className="w-8 h-8 bg-hero-gradient rounded-full mr-3"></div>
-              Formação Académica
+              Academic Formation
             </h3>
             
             <div className="space-y-6">
