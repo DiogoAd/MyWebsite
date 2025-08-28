@@ -95,14 +95,14 @@ const ContactSection = () => {
                   <Input id="name" name="name" placeholder="Your name" className="transition-all focus:shadow-soft" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" name="email" placeholder="your@email.com" className="transition-all focus:shadow-soft" />
+                  <Label htmlFor="email">Email <span className="text-red-500">*</span></Label>
+                  <Input id="email" type="email" name="email" placeholder="your@email.com" required className="transition-all focus:shadow-soft" />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="subject">Subject</Label>
-                <Input id="subject" name="subject" placeholder="Subject" className="transition-all focus:shadow-soft" />
+                <Label htmlFor="subject">Subject <span className="text-red-500">*</span></Label>
+                <Input id="subject" name="subject" placeholder="Subject" required className="transition-all focus:shadow-soft" />
               </div>
 
               <div className="space-y-2">
