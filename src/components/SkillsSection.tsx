@@ -60,7 +60,7 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <Card key={index} className="p-6 hover:shadow-medium transition-shadow">
               <h3 className="text-xl font-semibold mb-6 text-center">{category.title}</h3>

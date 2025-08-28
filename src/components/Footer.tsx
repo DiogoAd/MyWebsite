@@ -11,10 +11,10 @@ const Footer = () => {
   ];
 
   const footerLinks = [
-    { name: "Sobre", href: "#about" },
-    { name: "Experiência", href: "#experience" },
-    { name: "Competências", href: "#skills" },
-    { name: "Contacto", href: "#contact" }
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" }
   ];
 
   return (
@@ -24,17 +24,16 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              Teu Nome
+              Diogo Adão
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Desenvolvedor apaixonado por criar soluções digitais inovadoras 
-              que fazem a diferença.
+              Passionate developer crafting innovative digital solutions that make a real impact.
             </p>
           </div>
 
           {/* Navigation */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Navegação</h4>
+            <h4 className="font-semibold">Navegation</h4>
             <div className="grid grid-cols-2 gap-2">
               {footerLinks.map((link, index) => (
                 <a
@@ -50,7 +49,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Redes Sociais</h4>
+            <h4 className="font-semibold">Social Network</h4>
             <div className="flex space-x-2">
               {socialLinks.map((social, index) => (
                 <Button
@@ -77,10 +76,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Teu Nome. Todos os direitos reservados.
-          </p>
-          <p className="text-muted-foreground text-sm flex items-center">
-            Feito com <Heart className="h-4 w-4 mx-1 text-red-500" /> em Portugal
+            © {currentYear} Diogo Adão. Todos os direitos reservados.
           </p>
         </div>
       </div>
